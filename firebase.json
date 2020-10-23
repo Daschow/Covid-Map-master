@@ -9,11 +9,13 @@
     "redirects": [
       {
         "source": "/register",
-        "destination": "./register.html"
+        "destination": "./register.html",
+        "type" : 301
       },
       {
         "source": "/map",
-        "destination": "./map.html"
+        "destination": "./map.html",
+        "type" : 301
       }
     ]
   }

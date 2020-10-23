@@ -25,7 +25,7 @@ const signInWithEmailFunction = () => {
     .signInWithEmailAndPassword(email, password)
     .then(() => {
       //Signed in successfully
-      window.location.assign("./profile");
+      window.location.assign("./map");
     })
     .catch((error) => {
       //Something went wrong
@@ -39,5 +39,5 @@ signInWithMail.addEventListener("click", signInWithEmailFunction);
 
 //Go to register page
 signUp.addEventListener("click", () => {
-  window.location.assign("./register");
+  document.location.href = "register.html";
 });
