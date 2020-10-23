@@ -22,12 +22,12 @@ database = firebase.database();
 var ref = database.ref("users/");
 
 function addFirebaseUser(longitude, latitude) {
-  var data = {
+  let data = {
     longitude: longitude,
     latitude: latitude,
   };
   console.log(data);
-  var ref = database.ref("users/");
+  const ref = database.ref("users/");
   ref.push(data);
 }
 function errData(err) {

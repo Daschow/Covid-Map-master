@@ -2,7 +2,7 @@
   (function(){
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyDss330-ZBxn1pdxSjxS_oHjDah4O1Ksrw",
     authDomain: "covid-proj-ae853.firebaseapp.com",
     databaseURL: "https://covid-proj-ae853.firebaseio.com",

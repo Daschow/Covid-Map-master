@@ -88,17 +88,18 @@ window.addEventListener("load", () => {
 function openNav() {
   document.querySelector("#mySidenav").style.width = "250px";
   document.querySelector("#mapid").classList.add("open");
+  document.querySelector("#logOut").classList.add("openButton")
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.querySelector("#mySidenav").style.width = "0";
   document.querySelector("#mapid").classList.remove("open");
+  document.querySelector("#logOut").classList.remove("openButton")
 }
 
 const loadSideNav = () => {
   const parent = document.querySelector("#mySidenav");
-  console.log(markerFav);
   markerFav.forEach((element) => {
     let a = document.createElement("a");
     a.append(`Coordonnées du point : ${element.lat}, ${element.lng}`);

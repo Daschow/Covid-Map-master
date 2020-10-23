@@ -1,8 +1,12 @@
 #mapid {
-  height: 97vh;
+  height: 94vh;
 }
 
 .open {
+  margin-left: 250px;
+  height: 94vh;
+}
+.openButton{
   margin-left: 250px;
 }
 
@@ -23,15 +27,15 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  color: #FFFFFF;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #f2f2f2;
 }
 
 /* Position and style the close button (top right corner) */

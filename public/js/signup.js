@@ -1,9 +1,9 @@
-const mailField = document.getElementById('mail');
-const passwordField = document.getElementById('password');
-const displayNameField = document.getElementById('displayName');
-const photoField = document.getElementById('photo');
-const labels = document.getElementsByTagName('label');
-const signUp = document.getElementById('signUp');
+const mailField = document.querySelector('#mail');
+const passwordField = document.querySelector('#password');
+const displayNameField = document.querySelector('#displayName');
+const photoField = document.querySelector('#photo');
+const labels = document.querySelector('label');
+const signUp = document.querySelector('#signUp');
 const failureModal = document.querySelector('.failure');
 
 const auth = firebase.auth();

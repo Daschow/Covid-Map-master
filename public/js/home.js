@@ -6,11 +6,11 @@ const shownSocialMediaContainer =
 const hiddenSocialMediaContainer =
   "container socialMedia-container hidden-container";
 const phoneContainer = document.querySelector(".phone-container");
-const mailField = document.getElementById("mail");
-const passwordField = document.getElementById("password");
-const labels = document.getElementsByTagName("label");
-const signInWithMail = document.getElementById("signInWithMail");
-const signUp = document.getElementById("signUp");
+const mailField = document.querySelector("#mail");
+const passwordField = document.querySelector("#password");
+const labels = document.querySelector("label");
+const signInWithMail = document.querySelector("#signInWithMail");
+const signUp = document.querySelector("#signUp");
 const failureModal = document.querySelector(".failure");
 
 //Necessary part for the firebase built in functions

@@ -1,8 +1,8 @@
-const logOut = document.getElementById('logOut');
-const mergeAccounts = document.getElementById('mergeAccounts');
-const modifyAccount = document.getElementById('modifyAccount');
-const displayNameHolder = document.getElementById('displayNameHolder');
-const photoHolder = document.getElementById('photoHolder');
+const logOut = document.querySelector('#logOut');
+const mergeAccounts = document.querySelector('#mergeAccounts');
+const modifyAccount = document.querySelector('#modifyAccount');
+const displayNameHolder = document.querySelector('#displayNameHolder');
+const photoHolder = document.querySelector('#photoHolder');
 
 const auth = firebase.auth();
 
