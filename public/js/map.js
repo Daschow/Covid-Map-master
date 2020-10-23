@@ -1,5 +1,6 @@
 let markerFav = [];
 let compt = 0;
+let trou = false;
 const mapboxUrl =
   "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmNhdG91aWxsYXJkIiwiYSI6ImNrZ2pkamMxczA4aXkycW52MG96Mmg3dHQifQ.ctN6aeNIwVMY0zkf8MMDVQ";
 const mapboxAttribution =
@@ -60,7 +61,7 @@ const callAPI = (lat, lng) => {
             .openPopup();
           markerFav[compt] = { lat, lng };
           compt++;
-          loadSideNav();
+          loadSideNav(lat, lng, donneesCovid["Country"]);
         });
     });
 };
@@ -72,9 +73,7 @@ const useGeoLocation = () => {
 };
 
 mymap.on("click", onMapClick);
-window.addEventListener("load", () => {
-  useGeoLocation();
-});
+useGeoLocation();
 
 /*document.addEventListener("load", () => {
     // GET FAVS FROM DATABASE
@@ -88,21 +87,20 @@ window.addEventListener("load", () => {
 function openNav() {
   document.querySelector("#mySidenav").style.width = "250px";
   document.querySelector("#mapid").classList.add("open");
-  document.querySelector("#logOut").classList.add("openButton")
+  document.querySelector("#logOut").classList.add("openButton");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.querySelector("#mySidenav").style.width = "0";
   document.querySelector("#mapid").classList.remove("open");
-  document.querySelector("#logOut").classList.remove("openButton")
+  document.querySelector("#logOut").classList.remove("openButton");
 }
 
-const loadSideNav = () => {
+const loadSideNav = (lat, lng, pays) => {
   const parent = document.querySelector("#mySidenav");
-  markerFav.forEach((element) => {
-    let a = document.createElement("a");
-    a.append(`Coordonnées du point : ${element.lat}, ${element.lng}`);
-    parent.append(a);
-  });
+  let a = document.createElement("a");
+  var btn = document.createElement("button");
+  a.append(`Coordonnées du point : ${pays}`);
+  parent.append(a);
 };
