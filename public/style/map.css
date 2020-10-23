@@ -1,5 +1,5 @@
 #mapid {
-  height: 94vh;
+  height: 91vh;
 }
 
 .disableMap {
@@ -12,7 +12,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: -0.25rem !important;
+  margin-right: -0.25rem !important;
+  margin-left: -0.25rem !important;
 }
 
 .open {
