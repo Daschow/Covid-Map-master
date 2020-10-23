@@ -6,7 +6,7 @@
   margin-left: 250px;
   height: 94vh;
 }
-.openButton{
+.openButton {
   margin-left: 250px;
 }
 
@@ -28,7 +28,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
