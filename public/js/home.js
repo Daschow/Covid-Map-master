@@ -13,10 +13,6 @@ const signInWithMail = document.querySelector("#signInWithMail");
 const signUp = document.querySelector("#signUp");
 const failureModal = document.querySelector(".failure");
 
-//Necessary part for the firebase built in functions
-//It's easier and cleaner to type auth.signInWithEmailAndPassword
-//than firebase.auth().signInWithEmailAndPassword
-//also it's less repetitive since we are using it more than once
 const auth = firebase.auth();
 
 //Sign in function
