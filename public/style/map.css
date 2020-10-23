@@ -2,12 +2,22 @@
   height: 94vh;
 }
 
-.open {
-  margin-left: 250px;
-  height: 94vh;
+.disableMap {
+  display: none !important;
 }
-.openButton {
-  margin-left: 250px;
+
+.button__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.open {
+  margin-left: 262px;
+  height: 94vh;
 }
 
 .sidenav {
@@ -15,9 +25,8 @@
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #ddd; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -25,24 +34,28 @@
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 7px 2px 2px 5px;
   text-decoration: none;
   font-size: 20px;
-  color: #ffffff;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f2f2f2;
+  color: #020202;
+}
+
+.sidenav a:nth-child(n + 1) {
+  margin-top: 20px;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -22px;
+  right: 7px;
   font-size: 36px;
   margin-left: 50px;
 }

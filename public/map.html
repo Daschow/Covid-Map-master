@@ -13,17 +13,23 @@
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
+    <link rel="stylesheet" href="./style/bulma.min.css" />
   </head>
   <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
+    <div class="button__container columns is-3">
+      <button class="button is-primary" onclick="openNav()">Historique</button>
+      <h1>COVID Map</h1>
+      <button class="button is-danger" id="logOut">Logout</button>
     </div>
-    <span onclick="openNav()">Historique</span>
 
-    <div id="mapid"></div>
-
+    <div class="columns">
+      <div id="mySidenav" class="sidenav column disableMap">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+      </div>
+      <div class="column" id="mapid"></div>
+    </div>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -31,7 +37,6 @@
     ></script>
     <script src="./js/map.js"></script>
 
-    <button id="logOut">Logout</button>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/6.2.4/firebase-app.js"></script>
     <script src="/__/firebase/6.2.4/firebase-auth.js"></script>

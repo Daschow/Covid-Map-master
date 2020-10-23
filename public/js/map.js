@@ -47,7 +47,6 @@ const callAPI = (lat, lng) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.sys.country);
       fetch("https://api.covid19api.com/summary")
         .then((response) => response.json())
         .then((dataCovid) => {
@@ -86,15 +85,15 @@ useGeoLocation();
 */
 function openNav() {
   document.querySelector("#mySidenav").style.width = "250px";
+  document.querySelector("#mySidenav").classList.remove("disableMap");
   document.querySelector("#mapid").classList.add("open");
-  document.querySelector("#logOut").classList.add("openButton");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.querySelector("#mySidenav").style.width = "0";
+  document.querySelector("#mySidenav").classList.add("disableMap");
   document.querySelector("#mapid").classList.remove("open");
-  document.querySelector("#logOut").classList.remove("openButton");
 }
 
 const loadSideNav = (lat, lng, pays) => {
