@@ -39,5 +39,5 @@ signInWithMail.addEventListener("click", signInWithEmailFunction);
 
 //Go to register page
 signUp.addEventListener("click", () => {
-  window.location.assign("./register");
+  window.location.assign("./register.html");
 });
