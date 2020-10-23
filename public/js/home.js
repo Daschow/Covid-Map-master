@@ -41,7 +41,7 @@ const signInWithEmailFunction = () => {
 //so it calls the signInWithEmail function whenever a user clicks on it
 signInWithMail.addEventListener("click", signInWithEmailFunction);
 
-//Go to signup page
+//Go to register page
 signUp.addEventListener("click", () => {
-  window.location.assign("./signup");
+  window.location.assign("./register");
 });
